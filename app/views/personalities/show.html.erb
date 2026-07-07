@@ -1,0 +1,19 @@
+<div class="intoro">
+  <h5>診断結果</h5>
+  <p>あなたの性格は...</p>
+</div>
+
+<% if @result %>
+  <div class="personality-container">
+    <h6><%= @result[:name] %></h6>
+    <p>おすすめの業界：<%= @result[:industry] %></p>
+    <p>向いている職種：<%= @result[:job] %></p>
+    <p>求められる能力：<%= @result[:skill] %></p>
+  </div>
+<% else %>
+  <div class="personality-container">
+    <p>先に1つ目の診断を受けてください。</p>
+    <%= link_to "1つ目の診断へ", new_perfume_path, class: "link" %>
+  </div>
+<% end %>
+    

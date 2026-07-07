@@ -1,0 +1,53 @@
+<%= form_for(@perfume, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="perfume-container">
+        <div class="col-12">
+            <p>Q1. 課題に取り組み始めるときに近い状態は？</p>
+        </div>
+        <div class="col-6">
+            <%= f.radio_button :question1, "1", id: "custom_id1" %>
+            <label for="custom_id1">一度、課題の全体像を把握して、計画を立ててから動く</label>
+            <%= f.radio_button :question1, "2", id: "custom_id2" %>
+            <label for="custom_id2">課題にまず取り組み、進めながら形を整理していく</label>
+        </div>
+        <div class="col-12">
+            <p>Q2. 判断に迷ったとき、決め手となるのはどちらですか？</p>
+        </div> 
+        <div class="col-6">
+            <%= f.radio_button :question2, "1", id: "custom_id3" %>
+            <label for="custom_id3">今までに集めた情報やデータをもとに判断する</label>
+            <%= f.radio_button :question2, "2", id: "custom_id4" %>
+            <label for="custom_id4">その場の雰囲気や直感を基に素早く判断する</label>
+        </div>   
+        <div class="col-12">
+            <p>Q3. 想定外のトラブルが起きた際に、あなたが最初にとる行動はどちらですか？</p>
+        </div>
+        <div class="col-6">
+            <%= f.radio_button :question3, "1", id: "custom_id5" %>
+            <label for="custom_id5">トラブルが発生した原因を分析し、状況を整理してからトラブルに対応する</label>
+            <%= f.radio_button :question3, "2", id: "custom_id6" %>
+            <label for="custom_id6">とにかく手を動かして様々な方法を試し、周囲の反応を見ながらトラブルに対応する</label>
+        </div>
+    
+        <div class="col-12">
+            <p>Q4. 仕事や勉強において、最もモチベーションが上がるのはどちらの瞬間ですか？</p>
+        </div>
+        <div class="col-6">
+            <%= f.radio_button :question4, "1", id: "custom_id7" %>
+            <label for="custom_id7">チームの仲間と力を合わせて、誰かのサポートや役に立てたと感じるとき</label>
+            <%= f.radio_button :question4, "2", id: "custom_id8" %>
+            <label for="custom_id8">自分の裁量で自由に物事を進め、自分の立てた目標を達成できたとき</label>
+        </div>
+
+        <div class="col-12">
+            <p>Q5. 物事を成し遂げた際、より大きな達成感を覚えるのはどちらですか？</p>
+        <div class="col-6">
+            <%= f.radio_button :question5, "1", id: "custom_id9" %>
+            <label for="custom_id9">かかわった周囲の人から直接「ありがとう」と感謝されたとき</label>
+            <%= f.radio_button :question5,"2", id: "custom_id10" %>
+            <label for="custom_id10">自分が掲げた成果や目的を、数字や目に見える形で達成できたとき</label>
+        </div>
+    </div>
+    <div class="sindanbotan">
+        <%= f.submit " 結果 " %>
+    </div>
+<% end %>

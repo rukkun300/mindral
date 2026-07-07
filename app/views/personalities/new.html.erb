@@ -1,0 +1,34 @@
+<%= form_for(@personality, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="personality-container">
+        <div class="col-12">
+            <p>Q1.どちらの環境が魅力にかんじますか？</p>
+        </div>
+        <div class="col-6">
+            <%= f.radio_button :question1, "1", id: "custom_id1" %>
+            <label for="custom_id1">自分たちで新しい文化や仕組みを作っていける環境</label>
+            <%= f.radio_button :question1, "2", id: "custom_id2" %>
+            <label for="custom_id2">マニュアルや評価制度が確立されていて、安心して業務に集中できる環境</label>
+        </div>
+        <div class="col-12">
+            <p>Q2. </p>
+        </div> 
+        <div class="col-6">
+            <%= f.radio_button :question2, "1", id: "custom_id3" %>
+            <label for="custom_id3">周りの人と違う存在でありたい</label>
+            <%= f.radio_button :question2, "2", id: "custom_id4" %>
+            <label for="custom_id4">周りと同じでいたい</label>
+        </div>   
+        <div class="col-12">
+            <p>Q3. あなたが</p>
+        </div>
+        <div class="col-6">
+            <%= f.radio_button :question3, "1", id: "custom_id5" %>
+            <label for="custom_id5">相手の話をよく聞く方だ</label>
+            <%= f.radio_button :question3, "2", id: "custom_id6" %>
+            <label for="custom_id6">自分の話をよくする方だ</label>
+        </div>    
+    </div>
+    <div class="sindanbotan">
+        <%= f.submit " 結果 " %>
+    </div>
+<% end %>
