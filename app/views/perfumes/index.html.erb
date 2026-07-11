@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,59 +9,92 @@
     <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-
   <body>
-   <header class="site-header">
-  <div class="header-inner">
-    <a href="#" class="logo">Mind<span>ral</span></a>
-    <nav class="nav">
-      <%= link_to "診断する", new_perfume_path %>
-      <a href="#">業界・職種</a>
-      <a href="#">性格タイプ</a>
-    </nav>     
-  </div>
-   </header>
+    <header class="header">
+      <div class="header-logo">
+        <a href="" class="logo"><span>Mind</span>ral</a> 
+        <nav class="nav">
+          <%= link_to "診断する", new_perfume_path %>
+          <a href="#">業界・職種</a>
+          <a href="#">性格タイプ</a>
+        </nav>
+      </div>
+    </header>
 
+    
 
 <section class="shindan">
   <div class="shindan-inner">
-    <h1>Find Your Type,<br>Shape Your<br>Future</h1>
-    <div class="tag">
-      <span class="nami">≈≈</span>
-      8つの質問から、あなたの適性を見つける
-    </div>
-    <%= link_to "診断をはじめる", new_perfume_path %> 
+    <h1>Find Yourself<br>Shape Your<br>Future</h1>
+    <div class="tag">自分自身を理解し 未来を形作ろう</div>
+    <%= link_to "診断をはじめる →", new_perfume_path, class: "btn" %>
+  </div>
+
+  <!-- 右側の飾り(鉱石の結晶イメージ) -->
+  <div class="hero-deco">
+    <div class="deco deco1"></div>
+    <div class="deco deco2"></div>
+    <div class="deco deco3"></div>
+    <div class="deco deco4"></div>
   </div>
 </section>
 
+<!-- 2画面目 -->
+   <section class="about">
 
-<section class="about">
-  <!-- 右側の斜めカード帯 -->
-  <div class="card-strip">
-    <div class="strip-card"><h4>戦略家</h4><p>論理×協力×変革</p></div>
-    <div class="strip-card"></div><h4>支援家</h4><p>論理×自走×変革</p></div>
-    <div class="strip-card"></div><h4>革新者</h4><p>直感×協力×変革</p></div>
-    <div class="strip-card"></div><h4>研究者</h4><p>直感×自走×安定</p></div>
-    </div><div class="strip-card"></div><h4>企画家</h4><p>直感×自走×安定</p></div>
-    <div class="strip-card"></div><h4>伴走家</h4><p>直感×自走×安定</p></div>
-    <div class="strip-card"></div><h4>開拓者</h4><p>直感×自走×安定</p></div>
-    <div class="strip-card"></div><h4>芸術家</h4><p>直感×自走×安定</p></div>
+  <!-- 背景の透かし文字 -->
+  <div class="watermark">MINDRAL</div>
+
+  <!-- 左端のラベル -->
+  <div class="side-label">OUR<br>SERVICE</div>
 
   <div class="about-inner">
-    <h2>Function</h2>
-    <p>
-      Mindral、8問の質問に答えるだけで、あなたの性格タイプを
-      8つに分類する適性診断サイトです。
+
+    <!-- 中央見出し(単語ごとに色が変わる) -->
+    <h2 class="about-title">
+      <span class="c1">たった8問</span>で見つかる、<br>
+      あなたの<span class="c2">性格タイプ</span>と<span class="c3">適性業界</span>
+    </h2>
+    <p class="about-lead">
+      Mindralは、自己理解を深めて就職活動を成功へ導く適性診断サイトです。<br>
+      3つの軸からあなたの考え方のクセを見える化し、向いている業界・職種まで提案します。
     </p>
-    <p>
-      「論理⇄直感」「協力⇄自走」「変革⇄安定」の3つの軸から
-      あなたの考え方のクセを見える化し、向いている業界や職種まで提案します。
-    </p>
-    <h2>Purpose</h2>
-    <p>
-      就活の自己分析に、チームでの相互理解に。
-      まずは気軽に診断してみてください。
+    <div class="about-btn-wrap">
+      <%= link_to "診断をはじめる →", new_perfume_path, class: "btn-small" %>
+    </div>
+
+    <!-- Step 1/2/3 縦タイムライン -->
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-circle">1</div>
+        <div>
+          <div class="tl-step">Step 1</div>
+          <h3>8問の診断に答える</h3>
+          <p>2択の質問に直感で回答。3分で完了します。</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-circle">2</div>
+        <div>
+          <div class="tl-step">Step 2</div>
+          <h3>性格タイプがわかる</h3>
+          <p>3つの軸から、8タイプのうちあなたのタイプを判定します。</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-circle">3</div>
+        <div>
+          <div class="tl-step">Step 3</div>
+          <h3>適性業界・職種と出会う</h3>
+          <p>タイプに合った業界と、そこで求められる能力まで提案します。</p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
+
     
-   
