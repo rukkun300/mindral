@@ -13,16 +13,14 @@
  *= require_tree .
  *= require_self
  */
-header{
-    height:60px;
-    background: #000;
-}
+
 
 .header-nav{
-    background-color: #000;
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); 
     position:fixed;
     height:60px;
     width: 100%;
+   
 
     display: flex;
     flex-direction: row;
@@ -30,6 +28,9 @@ header{
     align-items: center;
 }
 
+h6{ color:#12c2e9;
+
+}
 
 nav{
     color:azure;
