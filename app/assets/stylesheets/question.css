@@ -1,0 +1,104 @@
+.quiz-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg,
+    #0a1b3f 0%,
+    #14315f 45%,
+    #1b4896 100%);
+  color: #ffffff;
+  padding-top: 100px;   /* 固定ヘッダーと被らないように */
+}
+
+.perfume-container,
+.personality-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ページ上部のタイトル */
+.quiz-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.quiz-header .eyebrow {
+  color: #d4af37;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+.quiz-header h1 { font-size: 30px; }
+.quiz-header p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* 質問番号のバッジ */
+.q-num {
+  display: inline-block;
+  background: #d4af37;
+  color: #0a1b3f;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 2px 16px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.col-12 { margin-top: 48px; }
+
+.col-12 p {
+  color:#ffffff;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 16px;
+
+}
+
+/* ラジオボタンの丸を隠す(labelをカードにする) */
+.col-6 input[type="radio"] {
+  display: none;
+}
+
+/* labelを選択カードに変身させる */
+.col-6 label {
+  display: block;
+  background: rgba(255, 255, 255, 0.07);       /* 半透明の白=ガラス風 */
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 14px;
+  padding: 18px 22px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: border 0.2s, background 0.2s;
+}
+
+.col-6 label:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* チェックされたradioの「直後の」labelだけ金色に光らせる */
+.col-6 input[type="radio"]:checked + label {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: #d4af37;
+}
+
+/* 結果ボタン */
+.sindanbotan {
+  text-align: center;
+  padding: 60px 0 100px;
+}
+
+.sindanbotan input[type="submit"] {
+  padding: 16px 80px;
+  background: #d4af37;
+  color: #0a1b3f;
+  font-weight: bold;
+  font-size: 17px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.sindanbotan input[type="submit"]:hover {
+  opacity: 0.8;
+}

@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Ruirui" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= yield :head %>
-
-    <link rel="manifest" href="/manifest.json">
-    <link rel="icon" href="/icon.png" type="image/png">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/icon.png">
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header class="header">
+      <div class="header-logo">
+        <a href="/" class="logo"><span>Mind</span>ral</a>
+        <nav class="nav">
+          <%= link_to "診断する", new_perfume_path %>
+          <a href="#">業界・職種</a>
+          <a href="#">性格タイプ</a>
+        </nav>
+      </div>
+    </header>
+
     <%= yield %>
+
+    <footer>
+      <p>Copyright © GeekSalon All Rights Reserved.</p>
+    </footer>
   </body>
 </html>

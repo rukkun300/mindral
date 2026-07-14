@@ -1,0 +1,146 @@
+/*  2画面目のプログラム  */
+.about {
+  background: linear-gradient(115deg,
+    #0a1b3f 0%,       /* 濃紺 */
+    #1c3f7c 50%,      /* ラピスブルー */
+    #d4af37 130%);    /* 金(画面の外まで続く設定で上品に) */
+  color: #ffffff;
+  padding: 140px 32px 240px;   /* 下だけ広め=透かしの居場所 */
+  position: relative;
+  overflow: hidden;
+}
+
+/* 背景の超巨大な透かし文字(下端から半分だけ顔を出す) */
+.watermark {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 220px;
+  font-weight: bold;
+  color: #ffffff;
+  opacity: 0.05;
+  white-space: nowrap;
+  line-height: 1;
+  z-index: 0;
+}
+
+/* 左端の小さなラベル */
+.side-label {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  z-index: 1;
+}
+
+.about-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== 中央の色が変わる見出し ===== */
+.about-title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.about-title .c1 { color: #7ea6ff; }   /* 明るい青 */
+.about-title .c2 { color: #d4af37; }   /* 金 */
+.about-title .c3 { color: #f0d98c; }   /* 淡い金 */
+
+.about-lead {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 24px;
+}
+
+.about-btn-wrap {
+  text-align: center;
+  margin: 32px 0 100px;
+}
+
+.btn-small {
+  display: inline-block;
+  padding: 12px 40px;
+  background: #d4af37;
+  color: #0a1b3f;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.btn-small:hover {
+  opacity: 0.8;
+}
+
+/* ===== Step 1/2/3 の縦タイムライン ===== */
+.timeline {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.tl-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  margin-bottom: 70px;
+}
+
+.tl-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.tl-item:nth-child(1) .tl-circle { background: #0a1b3f; }   /* 濃紺 */
+.tl-item:nth-child(2) .tl-circle { background: #f56161; }   /* ラピスブルー */
+.tl-item:nth-child(3) .tl-circle { background: #d4af37; }   /* 金 */
+
+.tl-step {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tl-item:nth-child(1) .tl-step { color: #7ea6ff; }
+.tl-item:nth-child(2) .tl-step { color: #9dbdf5; }
+.tl-item:nth-child(3) .tl-step { color: #f0d98c; }
+
+.tl-item h3 {
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 4px 0 6px;
+}
+
+.tl-item p {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.75);
+}
+/* 二画面のプログラム*/
+
+/* ===== 診断ページ(perfumes/new) ===== */
+.perfume-container {
+  max-width: 720px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+

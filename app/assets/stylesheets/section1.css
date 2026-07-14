@@ -1,0 +1,75 @@
+/* 一つ目の画面のプログラム　*/
+.shindan {
+  height: 100vh;
+  display: flex;              /* 左(文字)と右(飾り)を横に並べる */
+  align-items: center;        /* 縦中央 */
+  justify-content: space-between;   /* 左右の端に振り分け */
+  padding: 0 6%;              /* 左右に少しだけ余白 */
+  background: linear-gradient(135deg,
+    #0a1b3f 0%,
+    #1b4896 35%,
+    #6e47a8 70%,
+    #f56161 100%);
+  overflow: hidden;           /* 飾りのはみ出しを隠す */
+}
+
+.shindan-inner {
+  /* margin: 0 auto を削除=左詰めになる */
+  max-width: 620px;
+}
+
+/* ===== 右側の飾り:鉱石の結晶(半透明の円と菱形) ===== */
+.hero-deco {
+  position: relative;   /* 中の円の位置決めの基準 */
+  width: 420px;
+  height: 460px;
+  flex-shrink: 0;       /* 画面が狭くなっても潰れない */
+}
+
+/* 円の共通設定 */
+.deco {
+  position: absolute;
+  border-radius: 50%;                           /* 円にする */
+  border: 2px solid rgba(255, 255, 255, 0.35);  /* 白の薄い縁 */
+  background: rgba(255, 255, 255, 0.08);        /* 白8%=ガラス風 */
+}
+
+/* 4つの飾りの大きさと位置 */
+.deco1 { width: 260px; height: 260px; top: 0;     right: 40px; }
+.deco2 { width: 150px; height: 150px; top: 190px; right: 230px;
+         background: rgba(212, 175, 55, 0.18); }   /* 金っぽい円 */
+.deco3 { width: 100px; height: 100px; top: 320px; right: 60px; }
+.deco4 { width: 70px;  height: 70px;  top: 60px;  right: 330px;
+         border-radius: 0;                         /* 円をやめて */
+         transform: rotate(45deg);                 /* 45度回す=菱形(結晶風) */
+         background: rgba(245, 97, 97, 0.25); }    /* コーラルの菱形 */
+.shindan h1 {
+  font-size: 85px;
+  line-height: 1.15;
+}
+
+.tag {
+  margin-top: 32px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+/* ===== ボタン(link_toに class: "btn" を付けて使う) ===== */
+.btn {
+  display: inline-block;
+  width: 260px;
+  margin-top: 40px;
+  padding: 16px 0;
+  background: #f56161;
+  color: #0a1b3f;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+/*ここまでが一画面のプログラム */
