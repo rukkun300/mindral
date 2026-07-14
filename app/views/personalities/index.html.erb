@@ -1,2 +1,78 @@
-<h1>診断スタート</h1>
-<%= link_to "診断を始める", new_personality_path, class:"link" %>
+<div class="types-page">
+  <div class="types-inner">
+
+    <div class="types-header">
+      <p class="eyebrow">8 TYPES</p>
+      <h1>8つの性格タイプ</h1>
+      <p>あなたの中に眠る鉱石を発見しよう!!</p>
+    </div>
+
+    <div class="type-grid">
+
+      <%= link_to type_path("sapphire"), class: "type-card theme-sapphire" do %>
+        <div class="gem"></div>
+        <h3>聡明のサファイア</h3>
+        <div class="type-name">戦略家</div><br>
+        <span class="axes">論理 × 協力 × 変革</span>
+        <p>筋道を立てて考え、チームをまとめながら変化を起こすリーダー気質。ITコンサルやPMに適性。</p>
+      <% end %>
+
+      <%= link_to type_path("emerald"), class: "type-card theme-emerald" do %>
+        <div class="gem"></div>
+        <h3>調和のエメラルド</h3>
+        <div class="type-name">支援家</div><br>
+        <span class="axes">論理 × 協力 × 安定</span>
+        <p>確実さと協調性で組織を支える縁の下の力持ち。金融・インフラ系のSEや社内SEに適性。</p>
+      <% end %>
+
+      <%= link_to type_path("diamond"), class: "type-card theme-diamond" do %>
+        <div class="gem"></div>
+        <h3>革命のダイヤモンド</h3>
+        <div class="type-name">革新者</div><br>
+        <span class="axes">論理 × 自走 × 変革</span>
+        <p>高い専門性で常識を切り裂く開発者気質。AIエンジニアやデータサイエンティストに適性。</p>
+      <% end %>
+
+      <%= link_to type_path("amethyst"), class: "type-card theme-amethyst" do %>
+        <div class="gem"></div>
+        <h3>思索のアメジスト</h3>
+        <div class="type-name">研究者</div><br>
+        <span class="axes">論理 × 自走 × 安定</span>
+        <p>深く静かに考え続ける探究者。研究職やQAエンジニア、財務スペシャリストに適性。</p>
+      <% end %>
+
+      <%= link_to type_path("citrine"), class: "type-card theme-citrine" do %>
+        <div class="gem"></div>
+        <h3>創案のシトリン</h3>
+        <div class="type-name">企画家</div><br>
+        <span class="axes">直感 × 協力 × 変革</span>
+        <p>ひらめきと社交性で企画を形にする発想家。プランナーやWebマーケターに適性。</p>
+      <% end %>
+
+      <%= link_to type_path("rosequartz"), class: "type-card theme-rosequartz" do %>
+        <div class="gem"></div>
+        <h3>慈愛のローズクォーツ</h3>
+        <div class="type-name">伴走者</div><br>
+        <span class="axes">直感 × 協力 × 安定</span>
+        <p>共感力と傾聴で人に寄り添うサポーター。教育やカスタマーサクセスに適性。</p>
+      <% end %>
+
+      <%= link_to type_path("ruby"), class: "type-card theme-ruby" do %>
+        <div class="gem"></div>
+        <h3>情熱のルビー</h3>
+        <div class="type-name">開拓者</div><br>
+        <span class="axes">直感 × 自走 × 変革</span>
+        <p>燃える行動力で道なき道を切り拓く冒険者。ゲーム開発やベンチャー、起業に適性。</p>
+      <% end %>
+
+      <%= link_to type_path("opal"), class: "type-card theme-opal" do %>
+        <div class="gem"></div>
+        <h3>独創のオパール</h3>
+        <div class="type-name">芸術家</div><br>
+        <span class="axes">直感 × 自走 × 安定</span>
+        <p>唯一無二の世界観をこだわり抜いて磨く職人。デザイナーやライターに適性。</p>
+      <% end %>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+@media (max-width: 1000px) {
+  /* タイプ一覧:カードを4列→2列に */
+  .type-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---- スマホ(横幅900px以下) ---- */
+@media (max-width: 900px) {
+
+  /* ◆ヘッダー:文字を小さく詰める */
+  .logo { font-size: 22px; }
+  .nav a {
+    margin-left: 14px;
+    font-size: 12px;
+  }
+
+  /* ◆1画面目:飾りを隠して文字を全幅に */
+  .hero-deco { display: none; }
+  .shindan {
+    padding: 0 24px;
+  }
+  .shindan h1 { font-size: 44px; }
+  .tag { font-size: 16px; }
+
+  /* ◆2画面目(About) */
+  .side-label { display: none; }
+  .watermark { font-size: 15vw; }   /* 画面幅に連動して縮む */
+  .about-title { font-size: 26px; }
+  .about-lead { font-size: 13px; }
+  .tl-item h3 { font-size: 19px; }
+  .tl-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  /* ◆診断ページ(質問カード) */
+  .quiz-header h1 { font-size: 22px; }
+  .col-12 p { font-size: 16px; }
+  .col-6 label {
+    font-size: 14px;
+    padding: 15px 18px;
+  }
+  .sindanbotan input[type="submit"] {
+    padding: 14px 60px;
+    font-size: 15px;
+  }
+
+  /* ◆結果ページ */
+  .gem-title { font-size: 30px; }
+  .type-sub { font-size: 13px; }
+  .result-card p { font-size: 14px; }
+  .btn-retry {
+    padding: 12px 32px;
+    font-size: 14px;
+  }
+}
+
+/* ---- 小さいスマホ(横幅560px以下) ---- */
+@media (max-width: 560px) {
+
+  /* ◆タイプ一覧:カードを1列に */
+  .type-grid {
+    grid-template-columns: 1fr;
+  }
+  .types-header h1 { font-size: 26px; }
+
+  /* ◆タイプ詳細ページ */
+  .detail-head h1 { font-size: 26px; }
+  .detail-catch { font-size: 16px; }
+  .detail-body { font-size: 14px; }
+
+  /* ◆1画面目:さらに小さい画面用の微調整 */
+  .shindan h1 { font-size: 36px; }
+}

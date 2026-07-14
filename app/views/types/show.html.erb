@@ -1,0 +1,34 @@
+<div class="type-detail <%= @type[:theme] %>">
+  <div class="detail-inner">
+
+    <div class="detail-head">
+      <div class="gem"></div>
+      <h1><%= @type[:gem] %></h1>
+      <div class="type-name"><%= @type[:type_name] %>タイプ</div><br>
+      <span class="axes"><%= @type[:axes] %></span>
+    </div>
+
+    <p class="detail-catch"><%= @type[:catch] %></p>
+
+    <p class="detail-body"><%= @type[:body] %></p>
+
+    <div class="detail-card">
+      <h4>おすすめの業界</h4>
+      <p><%= @type[:industry] %></p>
+    </div>
+    <div class="detail-card">
+      <h4>向いている職種</h4>
+      <p><%= @type[:job] %></p>
+    </div>
+    <div class="detail-card">
+      <h4>求められる能力</h4>
+      <p><%= @type[:skill] %></p>
+    </div>
+
+    <div class="detail-btns">
+      <%= link_to "タイプ一覧へ戻る", personalities_path, class: "btn-back" %>
+      <%= link_to "診断してみる", new_perfume_path, class: "btn-back" %>
+    </div>
+
+  </div>
+</div>

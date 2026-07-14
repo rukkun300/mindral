@@ -1,0 +1,122 @@
+.result-page {
+  min-height: 100vh;
+  padding: 120px 24px 100px;
+  color: #ffffff;
+}
+
+.result-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.result-eyebrow {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  opacity: 0.85;
+}
+
+.result-lead {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+/* 鉱石の称号(メインの見出し) */
+.gem-title {
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 16px 0 4px;
+}
+
+/* 軸の表記 */
+.type-sub {
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0.85;
+  margin-bottom: 40px;
+}
+
+/* 鉱石の飾り(四角を45度回してCSSだけで宝石に) */
+.gem-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 28px;
+  transform: rotate(45deg);
+  border-radius: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* 業界・職種・能力のカード */
+.result-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.result-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 14px;
+  padding: 20px 24px;
+}
+
+.result-card h4 {
+  font-size: 13px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+
+.result-card p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ボタン */
+.result-btns {
+  margin-top: 48px;
+}
+
+.btn-retry {
+  display: inline-block;
+  padding: 14px 44px;
+  background: #ffffff;
+  color: #1a1a1a;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  margin: 8px;
+}
+
+.btn-retry:hover { opacity: 0.85; }
+
+/* ===== 鉱石ごとの背景テーマ(8色) ===== */
+.theme-sapphire {
+  background: linear-gradient(135deg, #0a1b3f 0%, #14315f 50%, #1b4896 100%);
+}
+.theme-emerald {
+  background: linear-gradient(135deg, #06301f 0%, #14523a 50%, #1e6f5c 100%);
+}
+.theme-diamond {
+  background: linear-gradient(135deg, #23262e 0%, #4a5160 50%, #8a94a6 100%);
+}
+.theme-amethyst {
+  background: linear-gradient(135deg, #2a1147 0%, #44246e 50%, #5b3a8e 100%);
+}
+.theme-citrine {
+  background: linear-gradient(135deg, #4a3305 0%, #8a6516 50%, #c9962e 100%);
+}
+.theme-rosequartz {
+  background: linear-gradient(135deg, #4a1f33 0%, #8a3f5c 50%, #c76a8e 100%);
+}
+.theme-ruby {
+  background: linear-gradient(135deg, #3f0a14 0%, #701020 50%, #a11433 100%);
+}
+.theme-opal {
+  background: linear-gradient(135deg, #1e5f5c 0%, #4a4a8e 45%, #8e4a7a 75%, #b8707a 100%);
+}
+

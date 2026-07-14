@@ -2,8 +2,9 @@
   min-height: 100vh;
   background: linear-gradient(135deg,
     #0a1b3f 0%,
-    #14315f 45%,
-    #1b4896 100%);
+    #1b4896 35%,
+    #6e47a8 70%,
+    #f56161 100%);
   color: #ffffff;
   padding-top: 100px;   /* 固定ヘッダーと被らないように */
 }
