@@ -74,14 +74,6 @@ a.type-card:hover {
   margin-bottom: 4px;
 }
 
-.type-card .type-name {
-  font-size: 13px;
-  font-weight: bold;
-  color: #ffdf8e;
-  opacity: 0.9;
-  margin-bottom: 12px;
-}
-
 .type-card .axes {
   display: inline-block;
   font-size: 12px;
