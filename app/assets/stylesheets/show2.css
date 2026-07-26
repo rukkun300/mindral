@@ -42,13 +42,12 @@
 .gem-icon {
   width: 90px;
   height: 90px;
-  margin: 0 auto 28px;
+  margin: 30px auto 50px;   /* 上30px・下50px(回転のはみ出し約19px+呼吸の余白) */
   transform: rotate(45deg);
   border-radius: 16px;
   border: 3px solid rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 0.15);
 }
-
 /* 業界・職種・能力のカード */
 .result-cards {
   display: flex;

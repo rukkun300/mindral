@@ -1,9 +1,8 @@
 <% if @result %>
   <div class="result-page <%= @theme %>">
     <div class="result-inner">
-      <p class="result-eyebrow">YOUR RESULT</p>
-      <p class="result-lead">あなたの性格タイプは…</p>
-
+      <p class="result-eyebrow">あなたの性格タイプは...</p> 
+      
       <div class="gem-icon"></div>
       <h1 class="gem-title"><%= @result[:name] %></h1>
       <p class="type-sub"><%= session[:axis_think] %> × <%= session[:axis_motive] %></p>
